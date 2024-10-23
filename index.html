@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Check-In Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Online Check-In</h1>
+    <form id="checkinForm" action="submit.php" method="post">
+      <label for="name">Passenger Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="flightNumber">Flight Number:</label>
+      <input type="text" id="flightNumber" name="flightNumber" placeholder="Enter flight number" required>
+
+      <label for="seat">Seat Selection:</label>
+      <select id="seat" name="seat" required>
+        <option value="" disabled selected>Select your seat</option>
+        <option value="1A">1A</option>
+        <option value="1B">1B</option>
+        <option value="2A">2A</option>
+        <option value="2B">2B</option>
+        <!-- Add more seat options as needed -->
+      </select>
+
+      <button type="submit">Check In</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
